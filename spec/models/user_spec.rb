@@ -2,7 +2,9 @@ require 'spec_helper'
 
 describe User do
 	
-	before { @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar") }
+	before do 
+     @user = User.new(name: "Example User", email: "user@poop.com", password: "foobar", password_confirmation: "foobar") 
+   end
 
 	subject { @user }
 
@@ -81,7 +83,7 @@ describe User do
       it { should eq found_user.authenticate(@user.password) }
     end
 
-    describe "With invaid password" do
+    describe "With invalid password" do
       let(:user_for_invalid_password) { found_user.authenticate("Invalid") }
 
       it { should_not eq user_for_invalid_password }
