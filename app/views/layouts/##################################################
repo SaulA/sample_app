@@ -1,0 +1,9 @@
+########################################################################################################
+#Web Streaming: authorized types: imagefeed, videofeed, audiostream, videostream, audiofeed
+#Fomat: for feeds:   [type].[folders separated by coma]=[url]
+#Fomat: for streams: [type].[folders separated by coma]=[name for audio/video streams],[url],[facultative thumbnail url for audio/videostream]
+########################################################################################################
+
+audiostream.Web,Radio=Mac Sound Output,http://192.168.0.4.:8000
+
+
